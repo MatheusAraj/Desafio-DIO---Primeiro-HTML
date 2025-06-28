@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio DIO - Html</title>
+    <style>
+        body {
+          background-color: rgba(18, 18, 18, 1);
+          color: white;
+          text-decoration: none;
+          font-family: Arial, sans-serif;
+        }
+        button{
+            background-color: #ffd900;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            cursor: pointer;
+        }
+
+        button a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        button:hover {
+            background-color: #a09d05;
+                }
+    </style>
+      
+</head>
+<body>
+        <h1 style="color: #ffd900;" id="back">Primeiros Passos com HTML</h1> <!-- Titulo -->
+    <hr style="border-color: #ffd900;" /> <!-- Separação de linha -->
+        <h2>Índice</h2> <!-- Sub-Titulo -->
+            <ul> <!-- Lista não ordenada -->
+                <!-- Índice / Sumario -->
+                <li><a href="#client-server" style="color: white; text-decoration: none;" > Definição de Client e Servidor</a></li>
+                <li><a href="#ferramenta" style="color: white; text-decoration: none;"> O que é uma IDE</a></li>
+                <li><a href="#estrutura" style="color: white; text-decoration: none;"> Estruturando o seu HTML</a></li>
+                <li><a href="#forms" style="color: white; text-decoration: none;"> Trabalhando com Formularios</a></li>
+                <li><a href="#formatacao" style="color: white; text-decoration: none;"> Formatação</a></li>
+                <li><a href="#midias" style="color: white; text-decoration: none;"> Trabalhando com Midias</a></li>
+                <li><a href="#table" style="color: white; text-decoration: none;"> Criando Tabelas</a></li>
+                <li><a href="#semantic" style="color: white; text-decoration: none;"> Entendendo o HTML Semantico</a></li>
+            </ul>
+    <fieldset style="border-color: #ffd900;"> <!-- Id para Linkar o href -->
+        <legend id="client-server"><h3>Definição de Client e Servidor</h3></legend> <img src="https://hermes.dio.me/articles/cover/d58d418c-7bc5-4115-af0e-baf3fd8908d1.png" style="float: right;" width="500px" alt="Imagem explicativa sobre Cliente e servidor"/>
+            <p> <!-- Paragrafo -->
+                A comunicação funciona da seguinte forma, o cliente faz um pedido. o servidor recebe esse pedido, processa e responde, o cliente recebe e exibe o conteudo, a comunicação utiliza o protocolo http, ele define como os dados sao troados entre cliente e servidor <br>
+                <u>Client</u> é quem faz o pedido.                                                                  <br>
+                Exemplo: Seu navegador (Chrome, Firefox etc.) quando você acessa um site.
+                <ul> <!-- Lista nao ordenada -->
+                    <!-- Itens da lista-->
+                    <li>É o dispositivo do usuário(celular, computador, etc.)</li>
+                    <li>Envia solicitações ao servidor.</li>
+                    <li>Recebe e exibe os dados (ex: o site que você pediu.)</li>
+                </ul>
+                <u>Servidor</u> é quem responde ao pedido.                                                          <br>
+                Exemplo: Um computador na internet que "entrega" a página do Google quando você acessa google.com.
+                <ul>
+                    <li>Armazena sites, sistemas, bancos de dados, arquivos etc.</li>
+                    <li>Processa os pedidos dos clientes.</li>
+                    <li>Envia os dados de volta ao cliente.</li>
+                </ul>
+                
+            </p>
+    </fieldset> <!-- Margem -->
+        <br> <!-- Quebra de linha -->
+    <fieldset style="border-color: #ffd900;">
+        <legend id="ferramenta"><h3>O que é uma IDE?</h3></legend> <!-- Titulo na margem -->
+            <p>
+                Uma IDE (Ambiente de Desenvolvimento Integrado) é um software que reúne diversas ferramentas essenciais para facilitar e organizar o desenvolvimento de código. 
+                No curso "Primeiros Passos com HTML", utilizamos o VS Code, uma IDE licenciada pela Microsoft, reconhecida por sua leveza, versatilidade e ampla gama de 
+                extensões que tornam o processo de programação mais eficiente e produtivo.
+            </p>
+    </fieldset>
+        <br>
+    <fieldset style="border-color: #ffd900;">
+        <legend id="estrutura"><h3>Estruturando seu HTML</h3></legend>
+            <p>
+                Estruturar bem o HTML é essencial para manter o código organizado, facilitar a manutenção e garantir que o conteúdo seja acessível por todos, inclusive por leitores de tela. Uma boa estrutura também melhora o SEO, ajuda no uso de CSS e JavaScript e segue os padrões da web, garantindo que o site funcione corretamente em diferentes dispositivos e navegadores. Além disso, um código bem feito é mais fácil de entender e evoluir. <br>
+                <br>
+                <b>Tags de estrutura básica</b> - &lt;HTML&gt; &lt;HEAD&gt; &lt;BODY&gt;   <br>
+                <b>Textos</b> - &lt;H1&gt; &lt;H2&gt; &lt;H3&gt; &lt;P&gt;                 <br>
+                <b> Lista ordenadas e Não ordenadas</b> - &lt;OL&gt; &lt;UL&gt; &lt;LI&gt; <br>
+                <b> Links</b> - &lt;A&gt; heref="youtube.com"> &lt;A&gt;                   <br>
+                Um site muito utilizado para estudo de HTML é o <a style="color: #ffd900;" target="_blank" href="https://www.w3schools.com/tags/default.asp">w3schools</a>, onde esta presente a lista de todas as tags do html
+            </p>
+    </fieldset>
+        <br>
+    <fieldset style="border-color: #ffd900;">
+        <legend id="forms"><h3>Trabalhando com Formularios</h3></legend>
+            <p>
+                Trabalhar com formulários em HTML é fundamental para coletar dados dos usuários, como cadastros, pesquisas e comentários. Eles permitem a interação entre o usuário e o site, sendo essenciais para sistemas dinâmicos. Além disso, formulários bem feitos melhoram a experiência do usuário, facilitam a validação de dados e a integração com servidores e bancos de dados.<br>
+                <br>
+                <b>Tags</b> - &lt;FORM&gt; &lt;/FORM&gt;  Onsubmit="" Method="get"> <br>
+                <b>Tag input e seus tipos</b> - &lt;input type="text" /&gt; <a style="color: #ffd900;" target="_blank" href="https://www.w3schools.com/tags/tag_input.asp">w3schools</a> focado em input <br>
+                <b>Checkbox e Radio</b> - &lt;Input type="checkbox" name="exemplo" value="exemplo"&gt;                                                           <br> 
+                <b>Button e seus tipos</b> - &lt;button type="submit">Enviar&lt;/button&gt;                                                                      <br>
+                <b>Select e seus tipos</b> - &lt;Select name="role"&gt;  &lt;option value ""&gt;Selecione o cargo&lt;/option&gt; &lt;/select&gt;                 <br>
+                <b>Textarea</b> - &lt;textarea name="message"&gt;&lt;/textarea&gt;
+            </p>
+    </fieldset>
+        <br>
+    <fieldset style="border-color: #ffd900;">
+        <legend id="formatacao"><h3>Formatação</h3></legend>
+            <p>
+                A formatação em HTML é essencial para organizar e destacar o conteúdo da página, tornando a leitura mais clara e agradável. Usar corretamente tags como &gt;strong&gt;, &gt;em&gt;, &gt;p&gt;, e listas ajuda a transmitir a informação de forma estruturada e compreensível. Além disso, uma boa formatação contribui para a acessibilidade e melhora a apresentação do site em diferentes dispositivos.<br>
+                <br>
+                <b>Formatação de textos</b> - &lt;strong &lt;b&gt; &lt;i&gt; &lt;u&gt; &lt;sup&gt;  &lt;br&gt;                       <br>
+                <b>Mais formatações</b> - &lt;font color="red" face="arial, sans, thorome, etc..."&gt;Texto exemplo&lt;/font&gt;     <br>
+                <b>DIV E SPAN</b> - &lt;div id=""&gt; &lt;div name=""&gt; &lt;span&gt;                                               <br>
+                <b>Fieldset</b> - &lt;fieldset&gt; &lt;legend&gt; &lt;/fieldset&gt;                                                  <br>
+                <b>Embeds e Iframes</b> - &lt;iframe src="...."&gt;                                                                  <br>
+                <b>Resenha sobre cores</b> - RGB HEX HSL RGBA HSLA                                                    
+            </p>
+    </fieldset>
+        <br>
+    <fieldset style="border-color: #ffd900;">
+        <legenda id="midias"><h3>Trabalhando com Midias</h3></legend>
+            <p>
+                As mídias em HTML, como imagens, vídeos e áudios, são essenciais para tornar o conteúdo mais dinâmico, atrativo e interativo. Elas ajudam a transmitir informações de forma visual e complementar o texto, melhorando a experiência do usuário. Além disso, o uso adequado de mídias pode reforçar o entendimento, engajar visitantes e valorizar a aparência do site, tornando-o mais moderno e acessível.<br>
+                <br>
+                <b>JPG (ou JPEG), GIF E PNG</b>  ...........                                                                 <br>
+                <b>Tag</b> - &lt;IMG src="">                                                                                 <br>
+                <b>Title="Descrição da imagem"  </b>                                                                         <br>
+                <b>Alt="Acessibilidade"</b>                                                                                  <br>
+                <b>Tag Audio</b> - &lt;audio&gt; &lt;source src="caminho do audio" /&gt; &lt;/audio&gt; , autoplay, controls <br>
+                <b>Tag Video</b> - &lt;Video&gt; &lt;source src="video.mp4"/> &lt;/video&gt;                                 <br>
+                <b>Tag Track</b> – legendas &lt;track src="arquivo.vttt" srclang="en" /&gt;                                  <br> 
+                <b>Tag iframe novamente.</b>
+            </p>
+    </fieldset>
+        <br>
+    <fieldset style="border-color: #ffd900;">
+        <legend id="table"><h3>Criando Tabelas</h3></legend>
+            <p>
+                As tabelas em HTML são importantes para organizar e exibir dados de forma clara e estruturada, facilitando a leitura e a comparação de informações. Elas são ideais para apresentar listas, horários, preços, resultados e qualquer conteúdo que exija organização em linhas e colunas. Quando bem utilizadas, melhoram a usabilidade e tornam o site mais profissional e informativo.<br>
+                Tag table - <b>&lt;table&gt</b><sub>Define o espaço da Tabela</sub><b>&lt;/table&gt;</b> Border, Width, cellspacing, align, cellpadding, summary<br>
+                Tag TR - <b>&lt;tr&gt;</b> Table row (Linha da tabela) <b>ID</b>                                                                                <br>
+                Tag TH - <b>&lt;th tittle="Nome completo" Nome &lt;/th&gt; Define o cabeçalho da tabela</b>                                                     <br>
+                Tag TD - <b>Célula comum</b>                                                                                                                    <br>
+                Tag THEAD - Definir o cabeçalho <b>&lt;thead&gt; &lt;/thead&gt;</b>                                                                             <br>
+                Tag TBODY - Estruturar a tabela, usado como principal <b>&lt;tbody&gt; &lt;/tbody&gt;</b>                                                       <br>
+                Tag TFOOT - define o rodapé <b>&lt;tfoot&gt; &lt;/tfoot&gt;</b>
+            </p>
+    </fieldset>
+        <br>
+    <fieldset style="border-color: #ffd900;">
+        <legend  id="semantic"><h3>HTML Semantico</h3></legend>
+            <p>
+                O HTML semântico é importante porque utiliza tags com significado claro, como &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt; e &lt;footer&gt;, que indicam a função de cada parte do conteúdo. Isso melhora a organização do código, facilita o trabalho de desenvolvedores, aumenta a acessibilidade para tecnologias assistivas e ajuda os mecanismos de busca a entenderem melhor o conteúdo, beneficiando o SEO.<br>
+                <b>Semântica</b> -  Estrutura da pagina &lt;header&gt; &lt;nav&gt; &lt;section&gt; &lt;Aside&gt; &lt;Article&gt; &lt;foooter&gt; HTML 5  <br>   
+                <b>Mudanças do HTML 5</b> - https://www.w3.org/TR/html5-diff/                                                                            <br>
+                <b>Acessibilidade</b> – alt="Frase que ira ser falada" / Arvore de acessibilidade                                                        <br>
+                <b>Web Scraping</b> – Indexa melhor as paginas do google, extrai informações é indexa em algum lugar                                     <br>
+                <b>Tags HTML</b> –  Main, Header e Footer / Main é um pagina, pois define o conteudo principal                                           <br>
+                <b>Tags HTML</b> – Section, Aside e Nav                                                                                                  <br>
+                <b>Tags HTML</b> – Article, blockquote e Q                                                                                               <br>
+                <b>Tags HTML</b> – Figure, Figcaption e Picture                                                                                          <br>
+                <b>SEO</b> - Otimização para mecanismosde buscas – <a style="color: #ffd900;" target="_blank" href="https://schema.org">Schemma</a> 
+            </p>
+    </fieldset>
+    <br>
+    <button><a href="#back">Voltar</a></button>
+</body>
+</html>
